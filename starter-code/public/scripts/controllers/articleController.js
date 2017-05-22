@@ -9,9 +9,9 @@ var app = app || {};
 
 
   articleController.articlePageInit = function() {
-   app.Article.fetchAll(app.articleView.initIndexPage);
-      $('.tab-content').hide();
-      $('#articles').fadeIn();
+    app.Article.fetchAll(app.articleView.initIndexPage);
+    $('.tab-content').hide();
+    $('#articles').fadeIn();
 
   }
 
