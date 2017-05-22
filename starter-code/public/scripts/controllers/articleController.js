@@ -8,5 +8,16 @@ var app = app || {};
   // Also be sure to hide all the main section elements, and reveal the #articles section:
 
 
+  articleController.handleMainNav = function() {
+    $('.main-nav').on('click', '.icon-home', function() {
+      $('#about').hide();
+      $(`#${$(this).data('content')}`).fadeIn();
+    });
+
+    $('.main-nav .tab:first').click();
+  };
+    app.Article.fetchAll();
+
+
   module.articleController = articleController;
 })(app);
